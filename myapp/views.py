@@ -27,11 +27,7 @@ def new_search(request):
 		else:
 			post_price = 'N/A'
 
-		if post.find('img'):
-			post_image_url = post.find('img')['src']
-			print(post_image_url)
-		else:
-			post_image_url = 'https://craigslist.org/images/peace.jpg'
+		post_image_url = 'https://craigslist.org/images/peace.jpg'
 
 		final_postings.append((post_title, post_url, post_price, post_image_url))
 
